@@ -26,17 +26,17 @@ To run the server, you need to create a MongoDb Atlas instance and connect your 
 
 __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you run into issues. 
 
-### Read `server/framework/doc.ts`
+### Learn how we use MongoDB
 
-To understand how to perform different CRUD operations on your MongoDB database, read `framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.  
+To understand how to perform different CRUD operations on your MongoDB database, read `framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.
+
+Also read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) to see how filters and queries work.
 
 ## Complete the TODOs in `server/concepts/user.ts` and `server/concepts/routes.ts`
 
 Feel free to edit anything besides framework as long as you maintain concept modularity. 
 
-Hint: look at `server/framework/doc.ts` to understand what functions to use!
-Hint: remember to `await` for async functions.
-Hint: read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) 
+Hint: remember to use `await` when returning values from async functions.
 
 ## Running Locally
 
