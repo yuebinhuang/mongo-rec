@@ -30,7 +30,9 @@ __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you ru
 
 To understand how to perform different CRUD operations on your MongoDB database, read `server/framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.
 
-Also read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) to see how filters and queries work.
+Read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) to see how filters and queries work.
+
+Read [how to filter](https://docs.google.com/document/d/1YRxLBDZwvQLtbkWEzvGb0DaWwfHoSkHUtJ60VYRhjaY/edit?usp=sharing) on MongoDB.  
 
 ## Complete the TODOs in `server/concepts/user.ts` and `server/concepts/routes.ts`
 
