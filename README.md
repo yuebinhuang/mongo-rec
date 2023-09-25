@@ -28,7 +28,7 @@ __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you ru
 
 ### Read `server/framework/doc.ts`
 
-To understand how to perform different CRUD operations on your MongoDB database, read `doc.ts`. You will use these functions to help you solve the `TODOs` for this prep.  
+To understand how to perform different CRUD operations on your MongoDB database, read `framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.  
 
 ## Complete the TODOs in `server/concepts/user.ts`
 
