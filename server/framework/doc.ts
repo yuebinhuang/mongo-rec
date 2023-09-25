@@ -9,7 +9,6 @@ import {
   Filter,
   FindOneAndUpdateOptions,
   FindOptions,
-  InsertManyResult,
   ObjectId,
   OptionalUnlessRequiredId,
   ReplaceOptions,
@@ -60,7 +59,7 @@ export default class DocCollection<Schema extends BaseDoc> {
   }
 
   /**
-   * Add `item` to the collection.
+   * Add `item` to the collection. Returns the _id of the inserted document.
    */
   async createOne(item: Partial<Schema>): Promise<ObjectId> {
     this.sanitizeItem(item);
@@ -70,19 +69,19 @@ export default class DocCollection<Schema extends BaseDoc> {
   }
 
   /**
-   * Add `items` to the collection.
+   * Add `items` to the collection. Returns a record object of the form `{ <index>: <_id> }` for inserted documents.
    */
-  async createMany(items: Partial<Schema>[], options?: BulkWriteOptions): Promise<InsertManyResult> {
+  async createMany(items: Partial<Schema>[], options?: BulkWriteOptions): Promise<Record<number, ObjectId>> {
     items.forEach((item) => {
       this.sanitizeItem(item);
       item.dateCreated = new Date();
       item.dateUpdated = new Date();
     });
-    return await this.collection.insertMany(items as OptionalUnlessRequiredId<Schema>[], options);
+    return (await this.collection.insertMany(items as OptionalUnlessRequiredId<Schema>[], options)).insertedIds;
   }
 
   /**
-   * Read the document that matches `filter`.
+   * Read the document that matches `filter`. Returns `null` if no document matches.
    */
   async readOne(filter: Filter<Schema>, options?: FindOptions): Promise<Schema | null> {
     this.sanitizeFilter(filter);
