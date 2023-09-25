@@ -28,7 +28,7 @@ __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you ru
 
 ### Learn how we use MongoDB
 
-To understand how to perform different CRUD operations on your MongoDB database, read `framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.
+To understand how to perform different CRUD operations on your MongoDB database, read `server/framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.
 
 Also read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) to see how filters and queries work.
 
@@ -73,7 +73,7 @@ Note that we try to keep concepts as modular and generic as possible.
 either directly use or extend from. You are free to add more base errors
 in that file if you need to
 (e.g., if your route needs to return [I am a teapot](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418) error).
-- `framework/` contains the framework code that does the magic to convert your
+- `server/framework/` contains the framework code that does the magic to convert your
 route implementations and error handling into Express handlers.
 You should't edit this directory, but feel free to take a look!
 - `server/app.ts` contains your app definition (i.e., concept instantiations).
