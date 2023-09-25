@@ -30,6 +30,11 @@ __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you ru
 
 To understand how to perform different CRUD operations on your MongoDB database, read `doc.ts`. You will use these functions to help you solve the `TODOs` for this prep.  
 
+## Complete the TODOs in `server/concepts/user.ts`
+
+Hint: look at `server/framework/doc.ts` to understand what functions to use!
+Hint: remember to `await` for async functions.  
+
 ## Running Locally
 
 Run `npm start` to start the server and the testing client.
