@@ -13,12 +13,12 @@ declare module "express-session" {
 
 export default class WebSessionConcept {
   start(session: WebSessionDoc, user?: ObjectId) {
-    this.isLoggedIn(session);
+    this.isLoggedOut(session);
     session.user = user;
   }
 
   end(session: WebSessionDoc) {
-    this.isLoggedOut(session);
+    this.isLoggedIn(session);
     session.user = undefined;
   }
 
