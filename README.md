@@ -1,6 +1,8 @@
 # 6.1040 Prep (Based on Backend starter code)
 
-## Getting Started
+## Setup
+
+Run `npm install` to install dependencies.
 
 If you are using VSCode/VSCodium, install the ESLint and Prettier extensions.
 The project is already configured to use ESLint and Prettier,
@@ -8,9 +10,9 @@ but feel free to add your own rules if you want.
 Right now, the code is formatted on save; you can change this in `.vscode/settings.json`
 by disabling `editor.formatOnSave`.
 
-Run `npm install` to install dependencies.
+## Getting Started
 
-## Creating MongoDb Atlas Instance
+### Creating MongoDb Atlas Instance
 To run the server, you need to create a MongoDb Atlas instance and connect your project. Feel free to follow the instructions below or use these [slides](https://docs.google.com/presentation/d/1HJ4Lz1a2IH5oKu21fQGYgs8G2irtMqnVI9vWDheGfKM/edit?usp=sharing).
 1. Create your [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) account.
 2. When selecting a template, choose the __free__ option, M0. 
@@ -23,6 +25,10 @@ To run the server, you need to create a MongoDb Atlas instance and connect your 
     to the `.env` file. 
 
 __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you run into issues. 
+
+### Read `server/framework/doc.ts`
+
+To understand how to perform different CRUD operations on your MongoDB database, read `doc.ts`. You will use these functions to help you solve the `TODOs` for this prep.  
 
 ## Running Locally
 
