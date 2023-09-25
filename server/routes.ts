@@ -11,7 +11,6 @@ class Routes {
   @Router.get("/session")
   async getSessionUser(session: WebSessionDoc) {
     const user = WebSession.getUser(session);
-    // TODO 1: Implement UserConcept.getById
     return await User.getById(user);
   }
 
@@ -34,7 +33,6 @@ class Routes {
   @Router.patch("/users")
   async updateUser(session: WebSessionDoc, update: Partial<UserDoc>) {
     const user = WebSession.getUser(session);
-    // TODO 2: Implement UserConcept.update
     return await User.update(user, update);
   }
 
