@@ -30,10 +30,13 @@ __Congrats!__ You're ready to run locally! Don't hesitate to reach out if you ru
 
 To understand how to perform different CRUD operations on your MongoDB database, read `framework/doc.ts`, which is a simple wrapper around the native driver. You will use these functions to help you solve the `TODOs` for this prep.  
 
-## Complete the TODOs in `server/concepts/user.ts`
+## Complete the TODOs in `server/concepts/user.ts` and `server/concepts/routes.ts`
+
+Feel free to edit anything besides framework as long as you maintain concept modularity. 
 
 Hint: look at `server/framework/doc.ts` to understand what functions to use!
-Hint: remember to `await` for async functions.  
+Hint: remember to `await` for async functions.
+Hint: read MongoDB's documentation on [fundamental CRUD operations](https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/) 
 
 ## Running Locally
 
