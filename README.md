@@ -50,7 +50,8 @@ use this when testing your code so your small changes get reflected in the serve
 ## Testing
 
 There is a testing client under `public` directory.
-Locate to `http://localhost:3000` (or a different port if you changed it) to see the testing client.
+Locate to `http://localhost:3000` after running the server
+via `npm run start` to see the testing client.
 Add more operations to `public/util.ts` to test your server code.
 Make sure to refresh the page after making changes to the client code.
 Add some fancy CSS to make your page look nicer!
