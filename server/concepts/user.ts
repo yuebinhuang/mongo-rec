@@ -1,6 +1,6 @@
 import { ObjectId } from "mongodb";
 import DocCollection, { BaseDoc } from "../framework/doc";
-import { BadValuesError, NotAllowedError } from "./errors";
+import { BadValuesError, NotAllowedError, NotFoundError } from "./errors";
 
 export interface UserDoc extends BaseDoc {
   username: string;
