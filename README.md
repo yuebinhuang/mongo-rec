@@ -34,7 +34,7 @@ Read MongoDB's documentation on [fundamental CRUD operations](https://www.mongod
 
 Read [how to filter](https://docs.google.com/document/d/1YRxLBDZwvQLtbkWEzvGb0DaWwfHoSkHUtJ60VYRhjaY/edit?usp=sharing) on MongoDB.  
 
-## Complete the TODOs in `server/concepts/user.ts` and `server/concepts/routes.ts`
+## Complete the TODOs in `server/concepts/user.ts` and `server/routes.ts`
 
 Feel free to edit anything besides framework as long as you maintain concept modularity. 
 
