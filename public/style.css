@@ -1,5 +1,6 @@
 html {
   height: 100vh;
+  background-color: #cdefef;
 }
 
 body {
@@ -28,6 +29,7 @@ main {
   width: 45%;
   height: 70vh;
   padding: 1em;
+  
 }
 
 #operations-list, #response-text {
@@ -36,6 +38,7 @@ main {
   overflow: auto;
   border: 1px solid #ccc;
   padding: 1em;
+  font-family: 'Franklin Gothic Museum', serif;
 }
 
 #response-text {
